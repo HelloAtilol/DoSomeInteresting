@@ -15,15 +15,15 @@ class MySQLCommand(object):
     # 初始化类
     def __init__(self):
         # 数据库地址
-        self.host = 'localhost'
+        self.host = '192.168.1.181'
         # 端口号
         self.port = 3306
         # 用户名
         self.user = 'root'
         # 密码
-        self.password = 'root'
+        self.password = 'sim509'
         # 数据库名
-        self.db = 'scrapy'
+        self.db = 'tencent_word_vec'
 
     def connectMysql(self, table='wechat_message'):
         """
