@@ -92,15 +92,16 @@ class MySQLCommand(object):
         else:
             raise Exception("数据库中没有找到该'%s'！" % word)
 
-    def select_order(self, title_list, order='ASC'):
+    def select_order(self, title_list, situation='', order='ASC'):
         """
         查找所有数据中的某几列
+        :param situation: 条件语句，即WHERE语句
         :param title_list: 要查找的列的名称
         :param order: 排序方式，ASC为升序，DESC为降序
         :return:
         """
         title = ','.join(title_list)
-        sql = "SELECT %s FROM %s ORDER BY createTime %s" % (title, self.table, order)
+        sql = "SELECT %s FROM %s %s ORDER BY createTime %s" % (title, self.table, situation, order)
         res = self.cursor.execute(sql)
         if res:
             result = self.cursor.fetchall()

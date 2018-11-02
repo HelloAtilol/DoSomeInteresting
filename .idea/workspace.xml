@@ -5,6 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/DoSomeInteresting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DoSomeInteresting.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat_analysis/split_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat_analysis/split_content.py" afterDir="false" />
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +72,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+=======
+            <state relative-caret-position="214">
+              <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
               <folding>
                 <element signature="e#108#122#0" expanded="true" />
               </folding>
@@ -79,10 +89,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="679">
               <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+=======
+            <state relative-caret-position="42">
+              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
               <folding>
-                <element signature="e#83#123#0" expanded="true" />
+                <element signature="e#101#141#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +106,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+=======
+            <state relative-caret-position="300">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
             </state>
           </provider>
         </entry>
@@ -130,18 +150,21 @@
         <option value="$PROJECT_DIR$/tecent_word_vec/save_word_to_db.py" />
         <option value="$PROJECT_DIR$/tecent_word_vec/ConnectDatabase.py" />
         <option value="$PROJECT_DIR$/wechat_analysis/data/wechat 10_26.csv" />
-        <option value="$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py" />
         <option value="$PROJECT_DIR$/wechat_analysis/data/content.txt" />
+        <option value="$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py" />
         <option value="$PROJECT_DIR$/wechat_analysis/split_content.py" />
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+=======
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="256" />
     <option name="y" value="16" />
@@ -366,7 +389,16 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17755532" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293348" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32824427" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38495094" />
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -399,6 +431,111 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding>
+            <element signature="e#108#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195575">
+          <caret line="7823" column="1" selection-start-line="7823" selection-end-line="7823" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding>
+            <element signature="e#101#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#108#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#101#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2425">
+          <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+          <folding>
+            <element signature="e#108#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2425">
+          <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+          <folding>
+            <element signature="e#108#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
     <entry file="file://F:/learning.py" />
     <entry file="file://D:/program/Anaconda/Lib/json/__init__.py" />
     <entry file="file://D:/program/Anaconda/Lib/json/decoder.py" />
@@ -457,29 +594,47 @@
     <entry file="file://$PROJECT_DIR$/wechat_analysis/data/stopwords.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py">
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="e#108#122#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="300">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
+    <entry file="file://$PROJECT_DIR$/wechat_analysis/ConnectDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+=======
+        <state relative-caret-position="214">
+          <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+          <folding>
+            <element signature="e#108#122#0" expanded="true" />
+          </folding>
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="679">
           <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+=======
+        <state relative-caret-position="42">
+          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+>>>>>>> 16b1852aa0c28d936e0b11c788af3ba2692fe75e
           <folding>
-            <element signature="e#83#123#0" expanded="true" />
+            <element signature="e#101#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
