@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="787a4382-bb25-4935-a012-5baa40f11932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat_analysis/data/content.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wechat_analysis/data/content.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wechat_analysis/split_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat_analysis/split_content.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +71,8 @@
       <file leaf-file-name="split_content.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            <state relative-caret-position="339">
+              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
               <folding>
                 <element signature="e#83#123#0" expanded="true" />
               </folding>
@@ -81,7 +82,11 @@
       </file>
       <file leaf-file-name="content.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -123,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="256" />
     <option name="y" value="16" />
     <option name="width" value="1403" />
@@ -521,12 +526,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wechat_analysis/data/content.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wechat_analysis/split_content.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        <state relative-caret-position="339">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
           <folding>
             <element signature="e#83#123#0" expanded="true" />
           </folding>

@@ -27,7 +27,7 @@ def order_content(conn):
 
 def get_id_content(content):
     re_con = re.compile(r'^(.*)(:\n)(.*)')
-    re_at = re.compile(r'^(.*?)(@)(.*)([\?\s]+)')
+    re_at = re.compile(r'^(.*?)(@)(.*?)([\?\s]+)')
     id_content = re_con.match(content)
     global at_dict
     try:
@@ -53,6 +53,7 @@ def main():
     conn.connectMysql()
     order_content(conn)
     conn.closeMysql()
+    print(at_dict)
 
 
 if __name__ == '__main__':
