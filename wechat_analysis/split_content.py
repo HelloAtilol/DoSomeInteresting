@@ -3,14 +3,24 @@
 读取文件，只读取内容部分，并做简单分析。
 author: 王诚坤
 date: 2018/10/30
+update: 2018/11/2
 """
 
 from ConnectDatabase import MySQLCommand
 import re
+import jieba
+from wordcloud import WordCloud
+from matplotlib import pyplot as plt
 
+# 用户分别被@的次数
 at_dict = {}
 
 def order_content(conn):
+    """
+    按照时间先后顺序获得纯文本内容
+    :param conn:
+    :return:
+    """
     last_sid = ''
     title_list = ['createTime', 'msgSvrId', 'content']
     result = conn.select_order(title_list)
@@ -47,13 +57,41 @@ def get_id_content(content):
         only_content = ''
     return only_content
 
+def get_stopwords(filepath):
+    stopwords = [line.strip() for line in open(filepath, 'r', encoding='utf-8').readlines()]
+    return  stopwords
+
+
+def split_word():
+    print('******开始分词！******')
+    # 加载停用词
+    stopwords = get_stopwords('data/stopwords.txt')
+    f = open('data/content.txt', encoding='utf-8')
+    result = ''
+    for line in f.readlines():
+        seg = jieba.cut(line)
+        for word in seg:
+            if word not in stopwords:
+                result = result + word + ' '
+    f.close()
+    wc = WordCloud(background_color='white', width=1000, height=800, font_path='data/msyh.ttc')
+    wc.generate_from_text(result)
+    plt.imshow(wc)
+    plt.axis('off')
+    plt.figure()
+    plt.show()
+    #print(result)
+    print('******分词结束！******')
+
+
 
 def main():
-    conn = MySQLCommand()
-    conn.connectMysql()
-    order_content(conn)
-    conn.closeMysql()
-    print(at_dict)
+    #conn = MySQLCommand()
+    #conn.connectMysql()
+    #order_content(conn)
+    #conn.closeMysql()
+    # print(at_dict)
+    split_word()
 
 
 if __name__ == '__main__':
