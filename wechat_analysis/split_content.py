@@ -67,7 +67,7 @@ def split_word():
     # 加载停用词
     stopwords = get_stopwords('data/stopwords.txt')
     f = open('data/content.txt', encoding='utf-8')
-
+    jieba.enable_parallel(100)
     result = ''
     for line in f.readlines():
         seg = jieba.cut(line)
