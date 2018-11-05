@@ -87,7 +87,7 @@ def split_word():
     plt.figure()
     plt.show()
     # print(result)
-    print('******分词结束！******')
+    print('******分词结束！******!')
 
 
 def main():
