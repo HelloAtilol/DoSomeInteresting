@@ -15,7 +15,6 @@ from matplotlib import pyplot as plt
 # 用户分别被@的次数
 at_dict = {}
 
-
 def order_content(conn):
     """
     按照时间先后顺序获得纯文本内容
@@ -30,15 +29,11 @@ def order_content(conn):
         # 去除重复
         if res[1] != last_sid:
             content = res[2]
-            # 将包含的超链接去掉
-            if '<' in content and '/' in content:
-                continue
             only_content = get_id_content(content)
             f.write(only_content + '\n')
             last_sid = res[1]
     f.close()
     return at_dict
-
 
 def get_id_content(content):
     re_con = re.compile(r'^(.*)(:\n)(.*)')
@@ -46,7 +41,7 @@ def get_id_content(content):
     id_content = re_con.match(content)
     global at_dict
     try:
-        only_content = content.replace(id_content.group(1) + id_content.group(2), '')
+        only_content = content.replace(id_content.group(1)+id_content.group(2), '')
         if '<' in only_content:
             return only_content
         at_content = re_at.match(only_content)
@@ -57,14 +52,14 @@ def get_id_content(content):
                 at_dict[only_at] = 1
             else:
                 at_dict[only_at] += 1
+            print(only_at)
     except AttributeError:
         only_content = ''
     return only_content
 
-
 def get_stopwords(filepath):
     stopwords = [line.strip() for line in open(filepath, 'r', encoding='utf-8').readlines()]
-    return stopwords
+    return  stopwords
 
 
 def split_word():
@@ -72,7 +67,6 @@ def split_word():
     # 加载停用词
     stopwords = get_stopwords('data/stopwords.txt')
     f = open('data/content.txt', encoding='utf-8')
-    jieba.enable_parallel(100)
     result = ''
     for line in f.readlines():
         seg = jieba.cut(line)
@@ -86,18 +80,18 @@ def split_word():
     plt.axis('off')
     plt.figure()
     plt.show()
-    # print(result)
-    print('******分词结束！******!')
+    #print(result)
+    print('******分词结束！******')
+
 
 
 def main():
-    conn = MySQLCommand()
-    conn.connectMysql()
-    order_content(conn)
-    conn.closeMysql()
-
+    #conn = MySQLCommand()
+    #conn.connectMysql()
+    #order_content(conn)
+    #conn.closeMysql()
+    # print(at_dict)
     split_word()
-    print(at_dict)
 
 
 if __name__ == '__main__':
