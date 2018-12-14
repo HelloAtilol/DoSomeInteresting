@@ -11,7 +11,7 @@ import pymysql
 
 class MySQLCommand(object):
     # 初始化类
-    def __init__(self):
+    def __init__(self, table='wechat_message'):
         # 数据库地址
         self.host = '192.168.1.181'
         # 端口号
@@ -23,7 +23,7 @@ class MySQLCommand(object):
         # 数据库名
         self.db = 'tencent_word_vec'
         # 数据库表名
-        self.table = 'wechat_message'
+        self.table = table
 
     def connectMysql(self):
         """
