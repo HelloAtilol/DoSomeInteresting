@@ -71,9 +71,11 @@ class AdditiveAutoEncoder(object):
     def reconstruct(self, X):
         return self.sess.run(self.reconstruction, feed_dict={self.x: X, self.scale: self.training_scale})
 
+    # 获取隐含层的权重w1
     def getWeights(self):
         return self.sess.run(self.weights['w1'])
 
+    # 获取隐含层的偏置系数b1
     def getBiases(self):
         return self.sess.run(self.weights['b1'])
 
@@ -92,6 +94,12 @@ def xavier_init(fan_in, fan_out, constant=1):
 
 
 def standard_scale(X_train, X_test):
+    """
+    对训练集和测试集进行标准化
+    :param X_train: 训练集
+    :param X_test: 测试集
+    :return:
+    """
     preprocessor = prep.StandardScaler().fit(X_train)
     X_train = preprocessor.transform(X_train)
     X_test = preprocessor.transform(X_test)
@@ -99,28 +107,44 @@ def standard_scale(X_train, X_test):
 
 
 def get_random_block_from_data(data, batch_size):
+    """
+    获取一个随机block数据，初始位置随机，长度为batch_size
+    :param data: 数据集
+    :param batch_size:一组数据的大小
+    :return:
+    """
     start_index = np.random.randint(0, len(data) - batch_size)
     return data[start_index:(start_index + batch_size)]
 
 
+# 获取数据集
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
+# 数据初始化
 X_train, X_test = standard_scale(mnist.train.images, mnist.test.images)
-n_samples = int(mnist.train.num_examples)
-train_epochs = 2000
 
+# 训练数据集的大小
+n_samples = int(mnist.train.num_examples)
+
+# 训练轮数
+train_epochs = 2000
+# 一组数据的大小
 batch_size = 128
 display_step = 1
 
+# 创建一个自编码器的实例
 autoencoder = AdditiveAutoEncoder(n_input=784, n_hidden=200, transfer_function=tf.nn.softplus,
                                   optimizer=tf.train.AdamOptimizer(learning_rate=0.001), scale=0.01)
 
 for epoch in range(train_epochs):
     avg_cost = 0.
+    # 单次训练次数
     total_batch = int(n_samples / batch_size)
     for i in range(total_batch):
         batch_xs = get_random_block_from_data(X_train, batch_size)
 
+        # 计算总损失值
         cost = autoencoder.partial_fit(batch_xs)
+        # 计算平均损失值
         avg_cost += cost / n_samples * batch_size
 
     if epoch % display_step == 0:
